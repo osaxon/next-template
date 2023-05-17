@@ -16,6 +16,17 @@ export default function RootLayout({
         <html lang="en" data-theme={siteConfig.siteTheme}>
             <body>
                 <Nav />
+                {siteConfig.displayAnnouncement && (
+                    <div className="bg-accent border-y py-6 px-4 overflow-x-hidden">
+                        <div className="border w-screen text-4xl uppercase animate-marquee">
+                            <span>{siteConfig.announcement}</span>
+                            <span>{siteConfig.announcement}</span>
+                            <span>{siteConfig.announcement}</span>
+                            <span>{siteConfig.announcement}</span>
+                            <span>{siteConfig.announcement}</span>
+                        </div>
+                    </div>
+                )}
                 {children}
             </body>
         </html>

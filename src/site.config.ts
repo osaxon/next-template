@@ -19,12 +19,14 @@ type SiteConfig = {
     navLinks: NavLink[];
     navButtons: NavButton[];
     siteTheme: string;
+    displayAnnouncement: boolean;
+    announcement?: string;
 };
 
 const siteConfig: SiteConfig = {
     clientName: "Client name",
     clientLogo: "/logo.png",
-    siteTitle: "Testing",
+    siteTitle: "Site",
     siteDescription: "Description",
     navLinks: [
         {
@@ -48,7 +50,9 @@ const siteConfig: SiteConfig = {
             style: "outline",
         },
     ],
-    siteTheme: "lofi",
+    displayAnnouncement: true,
+    announcement: "Coming soon! /",
+    siteTheme: "night",
 };
 
 export default siteConfig;

@@ -1,16 +1,17 @@
 import Link from "next/link";
 import siteConfig from "@/site.config";
+import clsx from "clsx";
 
 const btnThemeMap = new Map();
-btnThemeMap.set("default", "btn");
-btnThemeMap.set("outline", "btn btn-outline");
+btnThemeMap.set("default", "btn btn-primary");
+btnThemeMap.set("outline", "btn-outline btn btn-accent");
 
 export default function Nav() {
     const { siteTitle, navLinks, navButtons } = siteConfig;
 
     return (
         <nav>
-            <div className="max-w-5xl mx-auto flex justify-between py-8 px-4">
+            <div className="max-w-7xl mx-auto flex justify-between py-8 px-4">
                 <div className="text-3xl">{siteTitle}</div>
                 <div>
                     <ul className="flex gap-x-8 items-center">

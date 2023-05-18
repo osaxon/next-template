@@ -1,6 +1,12 @@
+import dynamic from "next/dynamic";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import siteConfig from "@/site.config";
+
+// only load Announcement component if displayAnnuncement property is set to true
+const Hero = dynamic(() => import("../components/Hero"), {
+    ssr: false,
+});
 
 export const metadata = {
     title: "Create Next App",
@@ -16,17 +22,7 @@ export default function RootLayout({
         <html lang="en" data-theme={siteConfig.siteTheme}>
             <body>
                 <Nav />
-                {siteConfig.displayAnnouncement && (
-                    <div className="bg-accent border-y py-6 px-4 overflow-x-hidden">
-                        <div className="border w-screen text-4xl uppercase animate-marquee">
-                            <span>{siteConfig.announcement}</span>
-                            <span>{siteConfig.announcement}</span>
-                            <span>{siteConfig.announcement}</span>
-                            <span>{siteConfig.announcement}</span>
-                            <span>{siteConfig.announcement}</span>
-                        </div>
-                    </div>
-                )}
+                {siteConfig.displayHero && <Hero />}
                 {children}
             </body>
         </html>

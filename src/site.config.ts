@@ -19,8 +19,9 @@ type SiteConfig = {
     navLinks: NavLink[];
     navButtons: NavButton[];
     siteTheme: string;
-    displayAnnouncement: boolean;
-    announcement?: string;
+    displayHero: boolean;
+    heroText?: string;
+    heroImg?: string;
 };
 
 const siteConfig: SiteConfig = {
@@ -50,8 +51,9 @@ const siteConfig: SiteConfig = {
             style: "outline",
         },
     ],
-    displayAnnouncement: true,
-    announcement: "Coming soon! /",
+    displayHero: true,
+    heroText: "Coming soon!",
+    heroImg: "/images/heroImg.jpg",
     siteTheme: "night",
 };
 

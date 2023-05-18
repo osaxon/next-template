@@ -27,7 +27,7 @@ type SiteConfig = {
 const siteConfig: SiteConfig = {
     clientName: "Client name",
     clientLogo: "/logo.png",
-    siteTitle: "Site",
+    siteTitle: "Site name / logo",
     siteDescription: "Description",
     navLinks: [
         {
@@ -54,7 +54,7 @@ const siteConfig: SiteConfig = {
     displayHero: true,
     heroText: "Coming soon!",
     heroImg: "/images/heroImg.jpg",
-    siteTheme: "night",
+    siteTheme: "acid",
 };
 
 export default siteConfig;

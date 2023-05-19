@@ -54,7 +54,7 @@ const siteConfig: SiteConfig = {
     displayHero: true,
     heroText: "Coming soon!",
     heroImg: "/images/heroImg.jpg",
-    siteTheme: "synthwave",
+    siteTheme: "emerald",
 };
 
 export default siteConfig;

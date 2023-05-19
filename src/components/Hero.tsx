@@ -20,7 +20,7 @@ export default function Hero() {
 
             {/* Text */}
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between w-full h-[70vh] items-center">
-                <span className="grow px-4 justify-center md:justify-start text-center font-mono text-7xl base-content uppercase h-[50vh] md:h-auto flex items-center">
+                <span className="grow px-6 justify-center md:justify-start text-center font-mono text-7xl base-content uppercase h-[50vh] md:h-auto flex items-center">
                     {heroText}
                 </span>
 

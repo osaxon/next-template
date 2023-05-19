@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-type BGProps = {
+type BGColourProps = {
     primaryFill: string;
     primaryStroke: string;
     secondaryFill: string;
@@ -9,6 +9,8 @@ type BGProps = {
     tertiaryFill: string;
     tertiaryStroke: string;
 };
+
+type BGProps = BGColourProps & SVGProps<SVGSVGElement>;
 
 const HeroBG = (props: BGProps) => (
     <svg

@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import siteConfig from "@/site.config";
-import clsx from "clsx";
 import { useState } from "react";
 import { BurgerSwipe } from "react-icons-animated";
 import { motion } from "framer-motion";

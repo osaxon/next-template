@@ -9,32 +9,34 @@ export default function Hero() {
         <article className="relative flex h-[70vh] overflow-hidden">
             {/* BG image */}
             <HeroBG
-                primaryFill="fill-accent"
-                primaryStroke="stroke-accent"
-                secondaryFill="fill-primary"
-                secondaryStroke="stroke-primary"
-                tertiaryFill="fill-secondary"
-                tertiaryStroke="stroke-secodary"
-                className="absolute top-0 left-0"
+                primaryfill="fill-primary"
+                primarystroke="stroke-primary"
+                secondaryfill="fill-secondary"
+                secondarystroke="stroke-secondary"
+                tertiaryfill="fill-accent"
+                tertiarystroke="stroke-accent"
+                className="absolute top-0 right-0 -scale-x-100"
             />
 
-            {/* Text */}
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between w-full h-[70vh] items-center">
-                <span className="grow px-6 justify-center md:justify-start text-center font-mono text-7xl base-content uppercase h-[50vh] md:h-auto flex items-center">
+            {/* Hero text */}
+            <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between w-full h-[70vh] items-center">
+                <span className="px-6 justify-center md:justify-start font-mono text-7xl base-content uppercase h-[50vh] md:h-auto flex items-center">
                     {heroText}
                 </span>
 
                 {/* Shape with text */}
-                <span className="flex flex-col justify-center items-center bg-accent bg-opacity-80 h-full w-full md:basis-2/5 rounded-t-full border-t-4 border-x-4 border-accent-content">
-                    <span className="text-5xl text-accent-content font-mono -skew-y-12">
-                        Test
-                    </span>
-                    <span className="text-5xl text-accent-content font-mono -skew-y-12">
-                        Test
-                    </span>
-                    <span className="text-5xl text-accent-content font-mono -skew-y-12">
-                        Test
-                    </span>
+                <span className="bg-neutral flex items-center justify-center bg-opacity-80 h-full w-full rounded-t-full border-t-4 border-x-4 border-accent-content grow-0">
+                    <div className="flex flex-col border-2 p-20 rounded-t-full justify-center items-center">
+                        <span className="text-5xl text-accent-content font-mono -skew-y-12">
+                            Test
+                        </span>
+                        <span className="text-5xl text-accent-content font-mono -skew-y-12">
+                            Test
+                        </span>
+                        <span className="text-5xl text-accent-content font-mono -skew-y-12">
+                            Test
+                        </span>
+                    </div>
                 </span>
             </div>
         </article>

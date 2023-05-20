@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import siteConfig from "@/site.config";
+import { Toaster } from "react-hot-toast";
 
 // only load Announcement component if displayAnnuncement property is set to true
 const Hero = dynamic(() => import("../components/Hero"), {
@@ -22,8 +23,9 @@ export default function RootLayout({
         <html lang="en" data-theme={siteConfig.siteTheme}>
             <body>
                 <Nav />
-                {siteConfig.displayHero && <Hero />}
+                <Hero />
                 {children}
+                <Toaster />
             </body>
         </html>
     );

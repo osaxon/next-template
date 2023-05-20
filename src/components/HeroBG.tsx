@@ -2,12 +2,12 @@ import * as React from "react";
 import { SVGProps } from "react";
 
 type BGColourProps = {
-    primaryFill: string;
-    primaryStroke: string;
-    secondaryFill: string;
-    secondaryStroke: string;
-    tertiaryFill: string;
-    tertiaryStroke: string;
+    primaryfill: string;
+    primarystroke: string;
+    secondaryfill: string;
+    secondarystroke: string;
+    tertiaryfill: string;
+    tertiarystroke: string;
 };
 
 type BGProps = BGColourProps & SVGProps<SVGSVGElement>;
@@ -29,7 +29,7 @@ const HeroBG = (props: BGProps) => (
             />
             <path
                 // stroke="#037b0b"
-                className={props.secondaryStroke}
+                className={props.secondarystroke}
                 strokeDasharray="3, 2"
                 d="M365.07 154.43a5.6 5.6 0 1 0 2.21 10.98 5.6 5.6 0 1 0-2.21-10.98zm3.15 15.69a5.6 5.6 0 1 0 2.22 10.98 5.6 5.6 0 1 0-2.22-10.98zm3.16 15.68a5.6 5.6 0 1 0 2.22 10.98 5.6 5.6 0 1 0-2.22-10.98zm3.16 15.69a5.6 5.6 0 1 0 2.22 10.98 5.6 5.6 0 1 0-2.22-10.98z"
             />
@@ -44,7 +44,7 @@ const HeroBG = (props: BGProps) => (
                 cy={382.29}
                 r={60.117}
                 // fill="#037b0b"
-                className={props.secondaryFill}
+                className={props.secondaryfill}
             />
             <path
                 fill="url(#g)"
@@ -69,7 +69,7 @@ const HeroBG = (props: BGProps) => (
                 cy={311.49}
                 r={70.786}
                 // stroke="rgba(66, 68, 90, 1)"
-                className={props.tertiaryStroke}
+                className={props.tertiarystroke}
                 strokeDasharray="3, 2"
                 strokeWidth={2.12}
             />
@@ -77,24 +77,24 @@ const HeroBG = (props: BGProps) => (
                 // stroke="#D3B714"
                 strokeDasharray="4, 4"
                 strokeWidth={2.24}
-                className={props.primaryStroke}
+                className={props.primarystroke}
                 d="M120.29 84.87a5.6 5.6 0 1 0-7.07 8.68 5.6 5.6 0 1 0 7.07-8.68zm-10.11 12.4a5.6 5.6 0 1 0-7.07 8.68 5.6 5.6 0 1 0 7.07-8.68zm-10.11 12.4a5.6 5.6 0 1 0-7.08 8.69 5.6 5.6 0 1 0 7.08-8.69zm-10.11 12.41a5.6 5.6 0 1 0-7.08 8.68 5.6 5.6 0 1 0 7.08-8.68z"
             />
             <path
                 // fill="#037b0b"
-                className={props.secondaryFill}
+                className={props.secondaryfill}
                 d="M783.98 431.38a5.6 5.6 0 1 0 10.17 4.69 5.6 5.6 0 1 0-10.17-4.69zm14.53 6.7a5.6 5.6 0 1 0 10.17 4.68 5.6 5.6 0 1 0-10.17-4.68zm14.53 6.69a5.6 5.6 0 1 0 10.18 4.69 5.6 5.6 0 1 0-10.18-4.69zm14.54 6.7a5.6 5.6 0 1 0 10.17 4.69 5.6 5.6 0 1 0-10.17-4.69zm-79.36-18.95a5.6 5.6 0 1 0 10.17 4.69 5.6 5.6 0 1 0-10.17-4.69zm14.53 6.7a5.6 5.6 0 1 0 10.18 4.68 5.6 5.6 0 1 0-10.18-4.68zm14.54 6.69a5.6 5.6 0 1 0 10.17 4.69 5.6 5.6 0 1 0-10.17-4.69zm14.53 6.7a5.6 5.6 0 1 0 10.17 4.68 5.6 5.6 0 1 0-10.17-4.68zm-79.36-18.95a5.6 5.6 0 1 0 10.18 4.69 5.6 5.6 0 1 0-10.18-4.69zm14.53 6.69a5.6 5.6 0 1 0 10.18 4.69 5.6 5.6 0 1 0-10.18-4.69zm14.54 6.7a5.6 5.6 0 1 0 10.17 4.69 5.6 5.6 0 1 0-10.17-4.69zm14.53 6.7a5.6 5.6 0 1 0 10.17 4.68 5.6 5.6 0 1 0-10.17-4.68z"
             />
             <path
                 // stroke="rgba(66, 68, 90, 1)"
-                className={props.tertiaryStroke}
+                className={props.tertiarystroke}
                 strokeDasharray="2, 2"
                 strokeWidth={2.43}
                 d="M1003.44 340.63a5.6 5.6 0 1 0 .91 11.16 5.6 5.6 0 1 0-.91-11.16zm1.31 15.94a5.6 5.6 0 1 0 .91 11.16 5.6 5.6 0 1 0-.91-11.16zm1.31 15.95a5.6 5.6 0 1 0 .91 11.16 5.6 5.6 0 1 0-.91-11.16zm1.3 15.94a5.6 5.6 0 1 0 .92 11.17 5.6 5.6 0 1 0-.92-11.17zm-22.48-78.42a5.6 5.6 0 1 0 .91 11.16 5.6 5.6 0 1 0-.91-11.16zm1.3 15.95a5.6 5.6 0 1 0 .92 11.16 5.6 5.6 0 1 0-.92-11.16zm1.31 15.94a5.6 5.6 0 1 0 .92 11.17 5.6 5.6 0 1 0-.92-11.17zm1.31 15.95a5.6 5.6 0 1 0 .92 11.16 5.6 5.6 0 1 0-.92-11.16zm-22.49-78.42a5.6 5.6 0 1 0 .92 11.16 5.6 5.6 0 1 0-.92-11.16zm1.31 15.94a5.6 5.6 0 1 0 .92 11.17 5.6 5.6 0 1 0-.92-11.17zm1.31 15.95a5.6 5.6 0 1 0 .92 11.16 5.6 5.6 0 1 0-.92-11.16zm1.31 15.95a5.6 5.6 0 1 0 .91 11.16 5.6 5.6 0 1 0-.91-11.16z"
             />
             <path
                 // fill="#D3B714"
-                className={props.primaryFill}
+                className={props.primaryfill}
                 d="m1213.29 386.88-40.99-3.28-1.132 23.267z"
             />
         </g>
@@ -125,7 +125,7 @@ const HeroBG = (props: BGProps) => (
                 <path
                     fill="none"
                     // stroke="#D3B714"
-                    className={props.primaryStroke}
+                    className={props.primarystroke}
                     d="m0 6 3-6 3 6"
                 />
             </pattern>
@@ -140,7 +140,7 @@ const HeroBG = (props: BGProps) => (
                 <path
                     fill="none"
                     // stroke="rgba(66, 68, 90, 1)"
-                    className={props.tertiaryStroke}
+                    className={props.tertiarystroke}
                     strokeWidth={1.17}
                     d="M4.99 1v7.98M1 4.99h7.98"
                 />
@@ -156,7 +156,7 @@ const HeroBG = (props: BGProps) => (
                 <path
                     fill="none"
                     // stroke="#D3B714"
-                    className={props.primaryStroke}
+                    className={props.primarystroke}
                     d="m0 6 3-6 3 6"
                 />
             </pattern>
@@ -171,7 +171,7 @@ const HeroBG = (props: BGProps) => (
                 <path
                     // fill="rgba(66, 68, 90, 1)"
                     d="M0 0h300v3H0z"
-                    className={props.tertiaryFill}
+                    className={props.tertiaryfill}
                 />
                 <path fill="rgba(0, 0, 0, 0)" d="M0 3h300v3H0z" />
             </pattern>
@@ -186,7 +186,7 @@ const HeroBG = (props: BGProps) => (
                 <path
                     // fill="#037b0b"
                     d="M0 0h336v3.5H0z"
-                    className={props.secondaryFill}
+                    className={props.secondaryfill}
                 />
                 <path fill="rgba(0, 0, 0, 0)" d="M0 3.5h336V7H0z" />
             </pattern>
